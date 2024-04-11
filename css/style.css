@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  ---text-color: #ededed;
+  --title-text-color: #fb6d3a;
+  --main-color: #00abf0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(---text-color);
+  letter-spacing: 0.03em;
+  font-size: 16px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  min-height: 100vh;
+  background: var(--bg-color);
+}
+
+.section:nth-child(even) {
+  background: var(--second-bg-color);
+}
+
+/* -----------  Header section  ------------ */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav.link {
+}
+
+.logo {
+  position: relative;
+  font-size: 30px;
+  color: var(---text-color);
+  font-weight: 600;
+}
+
+.link {
+  font-size: 20px;
+  color: var(---text-color);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* -----------  Home section  ------------ */
+
+.hero-title {
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.text-animate {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.text-content {
+  position: relative;
+}
+
+/*---  Button  ---*/
+
+.button {
+  position: relative;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+
+  width: 150px;
+  height: 50px;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+/* -----------  About section  ------------ */
+
+.section-title {
+  font-size: 50px;
+}
+
+.section_title-second {
+  color: var(--main-color);
+}
+
+.about-title {
+  position: relative;
+
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.16;
+}
+
+.about-text {
+}
+
+.about-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--title-text-color);
+}
+
+/* -----------  Projects section  ------------ */
+
+/* -----------  Contact section  ------------ */
+
+/* -----------  Footer section  ------------ */
